@@ -117,13 +117,54 @@ hr {
   margin-left: 0;
 }
 .fixelemek {
+  position: fixed;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
   bottom: 10px;
   right: 25px;
   cursor: pointer;
-  position: fixed;
-  
 }
+
+.card {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid thin;
+  color: gray;
+  font-size: 15px;
+  text-align: center;
+  bottom: 10px;
+  right: 25px;
+  cursor: pointer;
+  position: absolute;
+  /* flex-grow: 1; */
+}
+.card:hover {
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  transition: width 1s;
+  text-align: center;
+  display: flex;
+}
+
+#comments {
+  bottom: 10px;
+  right: 25px;
+}
+#Inspect {
+  bottom: 10px;
+  right: 85px;
+}
+#Screens {
+  bottom: 10px;
+  right: 145px;
+}
+/*
 #comments {
   height: 50px;
   width: 50px;
@@ -139,7 +180,7 @@ hr {
   right: 25px;
   cursor: pointer;
 }
-#comments:hover {
+/*#comments:hover {
   height: 50px;
   width: 150px;
   border-radius: 30px;
@@ -189,4 +230,4 @@ hr {
   border-radius: 30px;
   transition: width 1s;
   text-align: center;
-}
+}*/
